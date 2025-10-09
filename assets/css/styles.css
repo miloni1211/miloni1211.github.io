@@ -1,0 +1,102 @@
+/* Base & typography */
+* { box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; }
+
+/* Utilities */
+.gradient-bg {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+}
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #374151;
+  background: #1f2937;
+}
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border-color: #4b5563;
+  background: #374151;
+}
+
+.skill-tag {
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+.skill-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #4b5563, transparent);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-blur {
+  backdrop-filter: blur(10px);
+  background: rgba(17, 24, 39, 0.95);
+}
+
+.professional-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3),
+              0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.dark-card {
+  background: #1f2937;
+  border: 1px solid #374151;
+}
+
+.dark-input {
+  background: #374151;
+  border: 1px solid #4b5563;
+  color: #f9fafb;
+}
+.dark-input:focus {
+  background: #4b5563;
+  border-color: #60a5fa;
+}
+
+/* Small helpers for project tags (reused) */
+.tag {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+}
+.tag--green {
+  border-color: rgba(16, 185, 129, 0.3);
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+}
+.tag--purple {
+  border-color: rgba(139, 92, 246, 0.3);
+  background: rgba(139, 92, 246, 0.2);
+  color: #a78bfa;
+}
+.tag--orange {
+  border-color: rgba(249, 115, 22, 0.3);
+  background: rgba(249, 115, 22, 0.2);
+  color: #fb923c;
+}
+.tag--red {
+  border-color: rgba(239, 68, 68, 0.3);
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+}
+.tag--indigo {
+  border-color: rgba(99, 102, 241, 0.3);
+  background: rgba(99, 102, 241, 0.2);
+  color: #818cf8;
+}
